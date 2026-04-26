@@ -304,7 +304,7 @@ button {
   <h2>Point Definitions</h2>
   <button type="button" onclick="showCalculator()">← Back to Calculator</button>
 
-  <div class="definition-card"><h3>Tree Size Points</h3><p>S: 4.5 pts, M: 8 pts, L: 12 pts, XL: 20 pts.</p></div>
+  <div class="definition-card"><h3>Tree Size Points</h3><p>S: 4.5 pts, M: 9 pts, L: 15 pts, XL: 21 pts.</p></div>
   <div class="definition-card"><h3>Canopy Points</h3><p>S: 0 pts, M: +1 pt, L: +3 pts, XL: +5 pts.</p></div>
   <div class="definition-card"><h3>Normal Rigging</h3><p>+2 pts. Standard controlled lowering with ropes. Cannot be selected with Technical Rigging.</p></div>
   <div class="definition-card"><h3>Technical Rigging</h3><p>+5 pts. Complex rigging, negative blocking, limited tie-ins, or heavy pieces over targets. Cannot be selected with Normal Rigging.</p></div>
@@ -325,9 +325,9 @@ let activeTree = 0;
 
 const sizeOptions = {
   4.5: "S",
-  8: "M",
-  12: "L",
-  20: "XL"
+  9: "M",
+  15: "L",
+  21: "XL"
 };
 
 const canopyOptions = {
@@ -405,9 +405,9 @@ function render() {
           <label>Tree Size</label>
           <select onchange="updateTree(${i}, 'sizePoints', this.value)">
             <option value="4.5" ${tree.sizePoints == 4.5 ? "selected" : ""}>S - 4.5 pts</option>
-            <option value="8" ${tree.sizePoints == 8 ? "selected" : ""}>M - 8 pts</option>
-            <option value="12" ${tree.sizePoints == 12 ? "selected" : ""}>L - 12 pts</option>
-            <option value="20" ${tree.sizePoints == 20 ? "selected" : ""}>XL - 20 pts</option>
+            <option value="9" ${tree.sizePoints == 9 ? "selected" : ""}>M - 9 pts</option>
+            <option value="15" ${tree.sizePoints == 15 ? "selected" : ""}>L - 15 pts</option>
+            <option value="21" ${tree.sizePoints == 21 ? "selected" : ""}>XL - 21 pts</option>
           </select>
 
           <label>Canopy Size</label>

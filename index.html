@@ -411,10 +411,10 @@ function render() {
 
           <label>Tree Size</label>
           <select onchange="updateTree(${i}, 'sizePoints', this.value)">
-            <option value="5" ${tree.sizePoints == 4 ? "selected" : ""}>S - 4 pts</option>
-            <option value="9" ${tree.sizePoints == 8 ? "selected" : ""}>M - 8 pts</option>
-            <option value="14" ${tree.sizePoints == 12 ? "selected" : ""}>L - 12 pts</option>
-            <option value="21" ${tree.sizePoints == 18 ? "selected" : ""}>XL - 18 pts</option>
+            <option value="4" ${tree.sizePoints == 4 ? "selected" : ""}>S - 4 pts</option>
+            <option value="8" ${tree.sizePoints == 8 ? "selected" : ""}>M - 8 pts</option>
+            <option value="12" ${tree.sizePoints == 12 ? "selected" : ""}>L - 12 pts</option>
+            <option value="18" ${tree.sizePoints == 18 ? "selected" : ""}>XL - 18 pts</option>
           </select>
 
           <label>Canopy Size</label>

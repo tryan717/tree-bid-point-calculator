@@ -245,7 +245,7 @@ button {
     <input type="checkbox" id="excavatorCheck" onchange="calculate()">
     <span class="checkbox-text">Mini Excavator</span>
   </label>
-  <input type="number" id="excavator" value="500" oninput="calculate()">
+  <input type="number" id="excavator" value="400" oninput="calculate()">
 
   <label>Manual Add-On ($)</label>
   <input type="number" id="manual" value="0" oninput="calculate()">
@@ -536,7 +536,7 @@ function calculate() {
   });
 
   if (document.getElementById("nohaulCheck").checked) {
-    treeTotal *= 0.78;
+    treeTotal *= 0.82;
   }
 
   let addOns = 0;

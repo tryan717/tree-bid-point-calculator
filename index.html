@@ -57,14 +57,7 @@ input[type="date"] {
 }
 
 .dollar-input-wrap::before {
-  content: "$";
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #555;
-  font-size: 16px;
-  pointer-events: none;
+  content: "";
 }
 
 .dollar-input-wrap input[type="number"] {
@@ -298,7 +291,7 @@ button {
 
   <label>Manual Discount ($)</label>
   <div class="dollar-input-wrap">
-    <input type="number" id="manualDiscount" min="0" step="1" inputmode="decimal" placeholder="0" oninput="calculate()">
+    <input type="number" id="manualDiscount" min="0" step="1" inputmode="decimal" oninput="calculate()">
   </div>
 </div>
 

@@ -276,7 +276,15 @@ button {
   </select>
 
   <label>Manual Discount ($)</label>
-  <input type="number" id="manualDiscount" value="0" oninput="calculate()">
+  <label>Manual Discount ($)</label>
+  <input 
+  type="number" 
+  id="manualDiscount" 
+  value="0" 
+  min="0"
+  step="50"
+  placeholder="$0"
+  oninput="calculate()">
 </div>
 
 <button type="button" class="print-btn" onclick="printEstimate()">Print Estimate</button>

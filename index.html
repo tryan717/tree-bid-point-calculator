@@ -268,7 +268,7 @@ button {
 
   <label class="checkbox-row">
     <input type="checkbox" id="nohaulCheck" onchange="calculate()">
-    <span class="checkbox-text">No Log Haul-Off (–22% on tree work only)</span>
+    <span class="checkbox-text">No Log Haul-Off (–18% on tree work only)</span>
   </label>
 
   <label>Cash Discount ($)</label>
@@ -586,7 +586,7 @@ function buildPrintEstimate() {
   const excavatorAdd = document.getElementById("excavatorCheck").checked ? Number(document.getElementById("excavator").value || 0) : 0;
   const manualAdd = Number(document.getElementById("manual").value || 0);
 
-  const noHaul = document.getElementById("nohaulCheck").checked ? "Yes (–22% on tree work only)" : "No";
+  const noHaul = document.getElementById("nohaulCheck").checked ? "Yes (–18% on tree work only)" : "No";
   const cash = Number(document.getElementById("cash").value || 0);
   const returning = Number(document.getElementById("returning").value || 0);
   const manualDiscount = Number(document.getElementById("manualDiscount").value || 0);
